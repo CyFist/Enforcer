@@ -1,0 +1,35 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.qna {
+  padding: 5px;
+}
+
+.list-item {
+  margin: 2px;
+  border: 1px solid #ddd !important;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.list-item:hover {
+  background-color: #ddd;
+  transition: 0.1s;
+}
+
+.quiz-btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.correct {
+  background-color: green !important;
+  color: white !important;
+}
+
+.incorrect {
+  background-color: red !important;
+  color: white !important;
+}
