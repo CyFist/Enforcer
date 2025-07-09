@@ -55,6 +55,15 @@ const toolbarSx = {
 };
 
 export default function Settings() {
+  const [columnVisibilityModel, setColumnVisibilityModel] = React.useState({
+    Question: true,
+    Answer: false,
+    Option1: true,
+    option2: true,
+    option3: true,
+    option4: true,
+    actions: true,
+  });
   const [rows, setRows] = useRecoilState(EdittedQnBnkSelector);
   const [rowModesModel, setRowModesModel] = React.useState({});
   const [newID, setnewID] = React.useState("");
