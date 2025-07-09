@@ -221,13 +221,14 @@ export default function Settings() {
       minWidth: 100,
       editable: true,
     },
-    /*     {
+    {
       field: "Answer",
       headerName: "Answer",
       flex: 1,
       minWidth: 100,
       editable: true,
-    }, */
+      hideable: false,
+    },
     {
       field: "Option1",
       headerName: "Option 1",
@@ -327,8 +328,10 @@ export default function Settings() {
           getRowHeight={() => "auto"}
           editMode="row"
           columns={columns}
+          columnVisibilityModel={columnVisibilityModel}
           onRowEditStart={handleRowEditStart}
           onRowEditStop={handleRowEditStop}
+          disableColumnSelector
           columnBuffer={2}
           columnThreshold={2}
           disableRowSelectionOnClick
